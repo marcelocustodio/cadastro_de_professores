@@ -121,7 +121,7 @@
             </section>
             <section id="tirar-duvidas">
                 <p>Formulário de Dúvidas</p>
-                <form action="processar_duvida.php">
+                <form action="processar_duvida.php" method="POST">
                     <label for="nome">Seu nome</label>
                     <input type="text" name="nome" placeholder="Seu nome"><br>
 
@@ -129,7 +129,7 @@
                     <input type="text" name="email" placeholder="Seu email"><br>
 
                     <label for="professor">Professor</label>
-                    <select id="country" name="professor">
+                    <select name="professor">
                         <option value="marcelo">Marcelo</option>
                         <option value="adriana">Adriana</option>
                         <option value="judite">Judite</option>

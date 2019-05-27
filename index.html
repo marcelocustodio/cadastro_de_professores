@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--
+        <style>
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            p    {color: red;}
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 400;
+            }
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            th {
+                background-color: lightgray;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            tr:nth-child(odd) {
+                background-color: white;
+            }
+            input[type=text], select, textArea {
+                width: 100;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 100;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+        </style>
+        -->
+
+    </head>
+    <body>
+
+        <header>
+            <h1>Sistema de Cadastro de Professores</h1>
+            <h2>Introdução ao HTML - CEBRAC</h2>
+        </header>
+
+        <main>
+            <p>Áreas da empresa:</p>
+            <section id="lista-de-departamentos">
+                <ol>
+                    <li>Administração</li>
+                    <li>Acadêmico</li>
+                    <li>Publicidade e Marketing</li>
+                </ol>
+            </section>
+            <section id="lista-de-professores">
+                <p>Lista de Professores:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nome</th>
+                            <th>Aniversário</th>
+                            <th>Área</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>016330A</td>
+                            <td><a href="marcelo.html" title="Prof. Marcelo">Marcelo M. Custódio</a></td>
+                            <td>26/02</td>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <td>890034B</td>
+                            <td><a href="adriana.html" title="Profa. Adriana">Adriana Simões</a></td>
+                            <td>08/09</td>
+                            <td>Machine Learning</td>
+                        </tr>
+                        <tr>
+                            <td>892334B</td>
+                            <td><a href="judite.html" title="Profa. Judite">Judite Piedade</a></td>
+                            <td>24/05</td>
+                            <td>Excel</td>
+                        </tr>
+                        <tr>
+                            <td>344034B</td>
+                            <td><a href="marcos.html" title="Prof. Marcos">Marcos Rogério</a></td>
+                            <td>10/03</td>
+                            <td>Arduíno</td>
+                        </tr>
+                        <tr>
+                            <td>995034B</td>
+                            <td><a href="eliandro.html" title="Prof. Eliandro">Eliandro Pessoa</a></td>
+                            <td>02/11</td>
+                            <td>Photoshop</td>
+                        </tr>
+                    </tbody>
+                    <tr></tr>
+                </table>
+            </section>
+            <section id="tirar-duvidas">
+                <p>Formulário de Dúvidas</p>
+                <form action="processar_duvida.php">
+                    <label for="nome">Seu nome</label>
+                    <input type="text" name="nome" placeholder="Seu nome"><br>
+
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Seu email"><br>
+
+                    <label for="professor">Professor</label>
+                    <select id="country" name="professor">
+                        <option value="marcelo">Marcelo</option>
+                        <option value="adriana">Adriana</option>
+                        <option value="judite">Judite</option>
+                        <option value="marcos">Marcos</option>
+                        <option value="eliandro">Eliandro</option>
+                    </select><br>
+                    
+                    <label for="duvida">Dúvida</label>
+                    <textarea name="duvida"></textarea><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+
+        <footer>Aula de HTML 2019</footer>
+
+    </body>
+</html>
